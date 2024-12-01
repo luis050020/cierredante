@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Aplicaciones Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="module-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="module-box">
+                    <h2>Módulo IV</h2>
+                </div>
+                <div class="module-info">
+                    <h1>Desarrolla aplicaciones web en un sistema de información</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="intro-section" class="active">
+            <h2>Introducción al Desarrollo Web</h2>
+            <div class="video-container">
+                <video id="intro-video" controls>
+                    <source src="https://example.com/intro-video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <button id="start-course" class="btn animated-btn">Comenzar el curso</button>
+        </section>
+
+        <section id="module-selection" class="hidden">
+            <h2>Selecciona un Módulo</h2>
+            <div class="module-buttons">
+                <button id="submodule-1" class="btn animated-btn">Submódulo 1 - Construye aplicaciones web</button>
+                <button id="submodule-2" class="btn animated-btn">Submódulo 2 - Implementa aplicaciones web</button>
+                <button id="interactive-games" class="btn animated-btn">Juegos Interactivos</button>
+            </div>
+        </section>
+
+        <section id="submodule-1-content" class="hidden">
+            <h2>Submódulo 1 - Construye aplicaciones web</h2>
+            <div class="tabs">
+                <button class="tab-button active animated-btn" data-tab="html">HTML</button>
+                <button class="tab-button animated-btn" data-tab="css">CSS</button>
+                <button class="tab-button animated-btn" data-tab="javascript">JavaScript</button>
+            </div>
+
+            <div class="tab-content active" id="html-content">
+                <h3>Estructura HTML Básica</h3>
+                <p>HTML es el lenguaje fundamental para crear páginas web. Cada elemento HTML tiene un propósito específico en la estructura del documento.</p>
+                
+                <div class="image-container">
+                    <img src="https://example.com/html-structure.jpg" alt="Estructura HTML" class="animated-image">
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>HTML</span>
+                        <button class="copy-button animated-btn">Copiar</button>
+                    </div>
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Mi Primera Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;¡Bienvenidos a HTML!&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                    <div class="code-explanation">
+                        <h4>Explicación:</h4>
+                        <p>Esta es la estructura básica de un documento HTML5. El DOCTYPE declara el tipo de documento, el elemento html contiene todo el contenido, head incluye metadatos y configuraciones, y body contiene el contenido visible.</p>
+                    </div>
+                </div>
+
+                <h3>Elementos HTML Adicionales</h3>
+                <p>HTML ofrece una amplia variedad de elementos para estructurar y presentar contenido.</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>HTML</span>
+                        <button class="copy-button animated-btn">Copiar</button>
+                    </div>
+                    <pre><code class="language-html">
+&lt;!-- Listas --&gt;
+&lt;h2&gt;Lista no ordenada&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Lista ordenada&lt;/h2&gt;
+&lt;ol&gt;
+    &lt;li&gt;Primer paso&lt;/li&gt;
+    &lt;li&gt;Segundo paso&lt;/li&gt;
+    &lt;li&gt;Tercer paso&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Tabla --&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Fila 1, Celda 1&lt;/td&gt;
+        &lt;td&gt;Fila 1, Celda 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Fila 2, Celda 1&lt;/td&gt;
+        &lt;td&gt;Fila 2, Celda 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Formulario --&gt;
+&lt;form&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre" required&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+
+    &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+    &lt;textarea id="mensaje" name="mensaje" required&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+                    </code></pre>
+                    <div class="code-explanation">
+                        <h4>Explicación:</h4>
+                        <p>Este ejemplo muestra elementos HTML adicionales como listas ordenadas y no ordenadas, tablas y formularios. Estos elementos son fundamentales para estructurar y recopilar información en páginas web.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="css-content">
+                <h3>Estilos con CSS</h3>
+                <p>CSS permite dar estilo y diseño a nuestras páginas web, controlando colores, tamaños, disposición y más.</p>
+                
+                <div class="image-container">
+                    <img src="https://example.com/css-styling.jpg" alt="Estilos CSS" class="animated-image">
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>CSS</span>
+                        <button class="copy-button animated-btn">Copiar</button>
+                    </div>
+                    <pre><code class="language-css">
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Diseño de caja */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+                    </code></pre>
+                    <div class="code-explanation">
+                        <h4>Explicación:</h4>
+                        <p>Este ejemplo muestra varios conceptos de CSS: estilos básicos, diseño de caja, Flexbox, Grid y diseño responsivo. Cada sección demuestra cómo controlar diferentes aspectos del diseño y la presentación de una página web.</p>
+                    </div>
+                </div>
+
+                <h3>Estilos CSS Avanzados</h3>
+                <p>CSS ofrece técnicas avanzadas para crear diseños más sofisticados y efectos visuales atractivos.</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>CSS</span>
+                        <button class="copy-button animated-btn">Copiar</button>
+                    </div>
+                    <pre><code class="language-css">
+/* Animaciones CSS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Transformaciones */
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+.scale:hover {
+  transform: scale(1.2);
+}
+
+/* Gradientes */
+.gradient-background {
+  background: linear-gradient(to right, #ff0000, #00ff00);
+}
+
+/* Sombras */
+.box-shadow {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Pseudo-elementos */
+.fancy-first-letter::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/* Variables CSS */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+}
+                    </code></pre>
+                    <div class="code-explanation">
+                        <h4>Explicación:</h4>
+                        <p>Este ejemplo muestra técnicas CSS avanzadas como animaciones, transformaciones, gradientes, sombras, pseudo-elementos y variables CSS. Estas técnicas permiten crear efectos visuales más complejos y mantener un código CSS más eficiente y fácil de mantener.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="javascript-content">
+                <h3>JavaScript Interactivo</h3>
+                <p>JavaScript permite crear interactividad en las páginas web, respondiendo a eventos y manipulando el contenido dinámicamente.</p>
+                
+                <div class="image-container">
+                    <img src="https://example.com/javascript-interaction.jpg" alt="Interacción JavaScript" class="animated-image">
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>JavaScript</span>
+                        <button class="copy-button animated-btn">Copiar</button>
+                    </div>
+                    <pre><code class="language-javascript">
+// Variables y funciones
+let contador = 0;
+const incrementar = () => {
+  contador++;
+  actualizarContador();
+};
+
+// Manipulación del DOM
+function actualizarContador() {
+  document.getElementById('contador').textContent = contador;
+}
+
+// Eventos
+document.getElementById('boton-incrementar').addEventListener('click', incrementar);
+
+// Promesas y fetch
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
+// Async/Await
+async function obtenerDatos() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+                    </code></pre>
+                    <div class="code-explanation">
+                        <h4>Explicación:</h4>
+                        <p>Este ejemplo muestra varios conceptos de JavaScript: variables, funciones, manipulación del DOM, eventos, promesas, fetch y async/await. Cada sección demuestra cómo JavaScript puede interactuar con la página web y realizar operaciones asíncronas.</p>
+                    </div>
+                </div>
+
+                <h3>Conceptos Avanzados de JavaScript</h3>
+                <p>JavaScript ofrece características avanzadas para escribir código más eficiente y mantenible.</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>JavaScript</span>
+                        <button class="copy-button animated-btn">Copiar</button>
+                    </div>
+                    <pre><code class="language-javascript">
+// Desestructuración
+const persona = { nombre: 'Ana', edad: 30 };
+const { nombre, edad } = persona;
+console.log(nombre); // 'Ana'
+
+// Operador de propagación
+const numeros = [1, 2, 3];
+const nuevoArray = [...numeros, 4, 5];
+console.log(nuevoArray); // [1, 2, 3, 4, 5]
+
+// Funciones flecha
+const sumar = (a, b) => a + b;
+console.log(sumar(2, 3)); // 5
+
+// Clases
+class Persona {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+
+  saludar() {
+    console.log(`Hola, soy ${this.nombre}`);
+  }
+}
+
+const persona1 = new Persona('Carlos');
+persona1.saludar(); // "Hola, soy Carlos"
+
+// Módulos
+// archivo: modulo.js
+export const PI = 3.14159;
+export function doblar(x) {
+  return x * 2;
+}
+
+// archivo: main.js
+import { PI, doblar } from './modulo.js';
+console.log(PI); // 3.14159
+console.log(doblar(4)); // 8
+
+// Promesas encadenadas
+function operacionAsincrona1() {
+  return new Promise(resolve => setTimeout(() => resolve('Resultado 1'), 1000));
+}
+
+function operacionAsincrona2(resultado) {
+  return new Promise(resolve => setTimeout(() => resolve(resultado + ' y Resultado 2'), 1000));
+}
+
+operacionAsincrona1()
+  .then(resultado => operacionAsincrona2(resultado))
+  .then(resultadoFinal => console.log(resultadoFinal))
+  .catch(error => console.error(error));
+                    </code></pre>
+                    <div class="code-explanation">
+                        <h4>Explicación:</h4>
+                        <p>Este ejemplo muestra conceptos avanzados de JavaScript como desestructuración, operador de propagación, funciones flecha, clases, módulos y promesas encadenadas. Estas características permiten escribir código más limpio, modular y eficiente.</p>
+                    </div>
+                </div>
+
+                <div class="interactive-demo">
+                    <h3>Ejemplo Interactivo</h3>
+                    <div class="demo-section">
+                        <button id="increment-btn" class="animated-btn">Incrementar Contador</button>
+                        <span id="counter">0</span>
+                    </div>
+                    <div class="demo-section">
+                        <button id="message-btn" class="animated-btn">Mostrar Mensaje</button>
+                        <span id="message"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="submodule-2-content" class="hidden">
+            <h2>Submódulo 2 - Implementa aplicaciones web</h2>
+            <p>En este submódulo, aprenderás cómo implementar las herramientas y conceptos de desarrollo web en proyectos del mundo real.</p>
+            
+            <h3>Caso de Estudio: Creación de un Portafolio en Línea</h3>
+            <p>Vamos a ver cómo podemos aplicar HTML, CSS y JavaScript para crear un portafolio en línea profesional.</p>
+
+            <div class="image-container">
+                <img src="https://example.com/portfolio-example.jpg" alt="Ejemplo de Portafolio" class="animated-image">
+            </div>
+
+            <div class="code-block">
+                <div class="code-header">
+                    <span>HTML</span>
+                    <button class="copy-button animated-btn">Copiar</button>
+                </div>
+                <pre><code class="language-html">
+&lt;!-- Estructura básica del portafolio --&gt;
+&lt;header&gt;
+    &lt;h1&gt;Mi Portafolio&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#sobre-mi"&gt;Sobre Mí&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#proyectos"&gt;Proyectos&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;section id="sobre-mi"&gt;
+        &lt;h2&gt;Sobre Mí&lt;/h2&gt;
+        &lt;p&gt;Soy un desarrollador web apasionado por crear experiencias digitales únicas.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="proyectos"&gt;
+        &lt;h2&gt;Mis Proyectos&lt;/h2&gt;
+        &lt;div class="proyecto"&gt;
+            &lt;h3&gt;Proyecto 1&lt;/h3&gt;
+            &lt;img src="proyecto1.jpg" alt="Proyecto 1"&gt;
+            &lt;p&gt;Descripción del proyecto 1&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- Más proyectos aquí --&gt;
+    &lt;/section&gt;
+
+    &lt;section id="contacto"&gt;
+        &lt;h2&gt;Contacto&lt;/h2&gt;
+        &lt;form id="formulario-contacto"&gt;
+            &lt;input type="email" placeholder="Tu email" required&gt;
+            &lt;textarea placeholder="Tu mensaje" required&gt;&lt;/textarea&gt;
+            &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2023 Mi Portafolio. Todos los derechos reservados.&lt;/p&gt;
+&lt;/footer&gt;
+                </code></pre>
+            </div>
+
+            <p>Este es un ejemplo básico de cómo estructurar un portafolio en línea. En un proyecto real, añadirías más contenido y secciones según tus necesidades específicas.</p>
+
+            <h3>Implementación en el Mundo Real</h3>
+            <p>Para implementar este portafolio en un entorno de trabajo real, considerarías los siguientes pasos:</p>
+            <ol>
+                <li>Diseño y planificación: Crear wireframes y mockups antes de comenzar a codificar.</li>
+                <li>Desarrollo: Escribir el código HTML, CSS y JavaScript, siguiendo las mejores prácticas y estándares de la industria.</li>
+                <li>Pruebas: Realizar pruebas exhaustivas en diferentes navegadores y dispositivos.</li>
+                <li>Despliegue: Subir el sitio a un servidor web y configurar un dominio.</li>
+                <li>Mantenimiento: Actualizar regularmente el contenido y las tecnologías utilizadas.</li>
+            </ol>
+        </section>
+
+        <section id="interactive-games" class="hidden">
+            <h2>Juegos Interactivos</h2>
+            <p>Pon a prueba tus conocimientos de desarrollo web con estos juegos interactivos.</p>
+            
+            <div class="game-buttons">
+                <button id="hangman-btn" class="btn animated-btn">Ahorcado</button>
+                <button id="wordsearch-btn" class="btn animated-btn">Sopa de Letras</button>
+                <button id="memory-btn" class="btn animated-btn">Memorama</button>
+                <button id="quiz-btn" class="btn animated-btn">Quiz de Desarrollo Web</button>
+            </div>
+
+            <div id="game-container" class="hidden">
+                <!-- El contenido del juego se cargará aquí dinámicamente -->
+            </div>
+        </section>
+
+        <button id="return-to-menu" class="btn animated-btn">Volver al Menú Principal</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
